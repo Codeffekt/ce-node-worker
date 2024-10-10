@@ -52,6 +52,5 @@ class ProcessingListener {
     }
 }
 
-require('ts-node').register();
 const { task } = require(path__namespace.resolve(__dirname, worker_threads.workerData.path));
 task(new ProcessingListener(worker_threads.workerData.context));
